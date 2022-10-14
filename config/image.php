@@ -12,7 +12,6 @@ return [
     | configuration. By default PHP's "GD Library" implementation is used.
     |
     | Supported: "gd", "imagick"
-    |
     */
 
     'driver' => 'gd'

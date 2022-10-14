@@ -10,7 +10,6 @@ return [
     | This option controls the default authentication "guard" and password
     | reset options for your application. You may change these defaults
     | as required, but they're a perfect start for most applications.
-    |
     */
 
     'defaults' => [
@@ -32,7 +31,6 @@ return [
     | mechanisms used by this application to persist your user's data.
     |
     | Supported: "session", "token"
-    |
     */
 
     'guards' => [
@@ -62,7 +60,6 @@ return [
     | be assigned to any extra authentication guards you have defined.
     |
     | Supported: "database", "eloquent"
-    |
     */
 
     'providers' => [
@@ -89,7 +86,6 @@ return [
     | The expire time is the number of minutes that the reset token should be
     | considered valid. This security feature keeps tokens short-lived so
     | they have less time to be guessed. You may change this as needed.
-    |
     */
 
     'passwords' => [

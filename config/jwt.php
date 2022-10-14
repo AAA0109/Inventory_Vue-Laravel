@@ -22,7 +22,6 @@ return [
     |
     | Note: This will be used for Symmetric algorithms only (HMAC),
     | since RSA and ECDSA use a private/public key combo (See below).
-    |
     */
 
     'secret' => env('JWT_SECRET'),
@@ -41,7 +40,6 @@ return [
     |
     | Asymmetric Algorithms:
     | RS256, RS384 & RS512 / ES256, ES384 & ES512 will use the keys below.
-    |
     */
 
     'keys' => [
@@ -98,7 +96,6 @@ return [
     | This is not particularly recommended, so make sure you have appropriate
     | systems in place to revoke the token if necessary.
     | Notice: If you set this to null you should remove 'exp' element from 'required_claims' list.
-    |
     */
 
     'ttl' => env('JWT_TTL', 60),
@@ -117,7 +114,6 @@ return [
     | Some may want this instead of never expiring tokens for e.g. a mobile app.
     | This is not particularly recommended, so make sure you have appropriate
     | systems in place to revoke the token if necessary.
-    |
     */
 
     'refresh_ttl' => env('JWT_REFRESH_TTL', 20160),
@@ -131,7 +127,6 @@ return [
     |
     | See here: https://github.com/namshi/jose/tree/master/src/Namshi/JOSE/Signer/OpenSSL
     | for possible values.
-    |
     */
 
     'algo' => env('JWT_ALGO', 'HS256'),
@@ -144,7 +139,6 @@ return [
     | Specify the required claims that must exist in any token.
     | A TokenInvalidException will be thrown if any of these claims are not
     | present in the payload.
-    |
     */
 
     'required_claims' => [
@@ -166,7 +160,6 @@ return [
     | addition to the these claims.
     |
     | Note: If a claim does not exist then it will be ignored.
-    |
     */
 
     'persistent_claims' => [
@@ -188,7 +181,6 @@ return [
     | Under specific circumstances, you may want to disable this behaviour
     | e.g. if you only have one authentication model, then you would save
     | a little on token size.
-    |
     */
 
     'lock_subject' => true,
@@ -205,7 +197,6 @@ return [
     | This applies to the claims `iat`, `nbf` and `exp`.
     |
     | Specify in seconds - only if you know you need it.
-    |
     */
 
     'leeway' => env('JWT_LEEWAY', 0),
@@ -217,7 +208,6 @@ return [
     |
     | In order to invalidate tokens, you must have the blacklist enabled.
     | If you do not want or need this functionality, then set this to false.
-    |
     */
 
     'blacklist_enabled' => env('JWT_BLACKLIST_ENABLED', true),
@@ -232,7 +222,6 @@ return [
     | on every request.
     |
     | Set grace period in seconds to prevent parallel request failure.
-    |
     */
 
     'blacklist_grace_period' => env('JWT_BLACKLIST_GRACE_PERIOD', 0),
@@ -250,7 +239,6 @@ return [
     | for details.
     |
     | Set it to true if you want to decrypt cookies.
-    |
     */
 
     'decrypt_cookies' => false,
@@ -261,7 +249,6 @@ return [
     |--------------------------------------------------------------------------
     |
     | Specify the various providers used throughout the package.
-    |
     */
 
     'providers' => [
